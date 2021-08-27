@@ -66,6 +66,7 @@ const SignUp: React.FC = () => {
         onPress={() => {
           navigation.goBack();
         }}>
+        <Icon name="arrow-left" size={20} color="#000" />
         <ButtonLabel>Voltar para o login</ButtonLabel>
       </ButtonContainer>
     </Container>

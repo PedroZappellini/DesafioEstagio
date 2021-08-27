@@ -29,11 +29,12 @@ export const LogoContainer = styled.View`
 export const ButtonLabel = styled.Text`
   font-size: 14px;
   text-align: center;
-  width: 100%;
+  margin-left: 10px;
 `;
 
 export const ButtonContainer = styled.TouchableOpacity`
-  width: 100%;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   margin-top: 10px;
 `;
