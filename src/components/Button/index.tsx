@@ -7,8 +7,8 @@ interface ButtonProps extends TouchableOpacityProps {
   containerStyle?: Object;
 }
 
-const Button: React.FC<ButtonProps> = ({children, containerStyle}) => (
-  <Container style={containerStyle}>
+const Button: React.FC<ButtonProps> = ({children, containerStyle, ...rest}) => (
+  <Container style={containerStyle} {...rest}>
     <ButtonText>{children}</ButtonText>
   </Container>
 );

@@ -13,6 +13,7 @@ export const Title = styled.Text`
 
 export const Container = styled.View`
   flex: 1;
+  background: #fff;
   justify-content: center;
   padding: 0 30px;
   margin-bottom: 40px;
@@ -29,7 +30,6 @@ export const LogoContainer = styled.View`
 export const ButtonLabel = styled.Text`
   font-size: 14px;
   text-align: center;
-
   margin-left: 10px;
 `;
 

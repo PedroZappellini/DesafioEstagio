@@ -7,6 +7,8 @@ export const Content = styled.View`
   width: 100%;
   height: 50px;
   padding: 0 16px;
+  flex-direction: row;
+  align-items: center;
 `;
 
 export const TextInput = styled.TextInput`

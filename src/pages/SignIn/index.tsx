@@ -47,7 +47,7 @@ const SignIn: React.FC = () => {
       <Button
         containerStyle={{marginTop: 20}}
         onPress={() => {
-          console.warn('deu');
+          navigation.navigate('Home');
         }}>
         Entrar
       </Button>
