@@ -9,6 +9,7 @@ import Ticket from '../pages/Ticket';
 import Profile from '../pages/Profile';
 import Icon from 'react-native-vector-icons/Feather';
 import EventDetails from '../pages/EventDetails';
+import PaymentDetails from '../pages/PaymentDetails';
 
 const Tab = createBottomTabNavigator();
 
@@ -58,6 +59,8 @@ const AppRoutes: React.FC = () => (
     <App.Screen name="SignUp" component={SignUp} />
     <App.Screen name="EventDetails" component={EventDetails} />
     <App.Screen name="Home" component={TabRoutes} />
+    <App.Screen name="Payment" component={PaymentDetails} />
+    <App.Screen name="Ticket" component={Ticket} />
   </App.Navigator>
 );
 

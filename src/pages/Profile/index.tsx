@@ -14,7 +14,7 @@ const Profile: React.FC = () => {
         <Container>
           <ProfileImage
             source={{
-              uri: 'https://avatars.githubusercontent.com/u/62000959?v=4',
+              uri: 'https://avatars.githubusercontent.com/u/62000959?s=400&u=7df881612cbbc80c46bb82c9872391caa40cae4c&v=4',
             }}
           />
 

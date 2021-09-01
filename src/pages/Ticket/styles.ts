@@ -1,31 +1,27 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
-  background: #fff;
+export const TabContainer = styled.View`
   flex: 1;
 `;
 
-export const OptionContainer = styled.View`
-  flex-direction: row;
+export const Container = styled.View`
+  background: #fff;
+  flex: 1;
+  padding: 0 20px;
 `;
 
-export const OptionButton = styled.TouchableOpacity`
-  width: 50%;
+export const EventContainer = styled.View`
+  background: #e9ecef;
+  border-radius: 8px;
+  margin-top: 30px;
+`;
+
+export const EventImage = styled.Image`
+  width: 100px;
   height: 100px;
-  padding: 0 30px;
-  margin-top: 10px;
-`;
-
-export const OptionLabel = styled.Text`
-  font-size: 24px;
-  font-family: 'RobotoSlab-Medium';
-  border-bottom-width: 2px;
+  border-radius: 8px;
 `;
 
 export const Previus = styled.View``;
 
 export const Next = styled.View``;
-
-export const Title = styled.Text`
-  font-size: 24px;
-`;

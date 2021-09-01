@@ -5,12 +5,14 @@ import {ButtonText} from './styles';
 import Header from '../../components/Header';
 import {IEvent} from '../HomeScreen';
 import {Button, Container, Description, EventImage, Title} from './styles';
+import {useNavigation} from '@react-navigation/native';
 
 interface RouteParams {
   event: IEvent;
 }
 
 const EventDetails: React.FC = () => {
+  const navigation = useNavigation();
   const route = useRoute();
   const params = route.params as RouteParams;
   const {event} = params;
@@ -27,7 +29,10 @@ const EventDetails: React.FC = () => {
         <Title>{event.name}</Title>
         <Description>{event.description}</Description>
 
-        <Button>
+        <Button
+          onPress={() => {
+            navigation.navigate('Payment', {event});
+          }}>
           <Icon name="shopping-cart" size={20} />
           <ButtonText>Comprar ingresso</ButtonText>
         </Button>

@@ -39,6 +39,7 @@ export const Button = styled.TouchableOpacity`
 `;
 
 export const ButtonText = styled.Text`
+  font-family: 'RobotoSlab-Medium';
   font-size: 24px;
   padding-left: 20px;
 `;

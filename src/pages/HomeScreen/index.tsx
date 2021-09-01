@@ -10,12 +10,12 @@ import {
   EventContent,
   EventImage,
   EventsList,
+  EventTitle,
   Search,
 } from './styles';
 import {useNavigation} from '@react-navigation/native';
 import Header from '../../components/Header';
 import {ButtonContainer} from './styles';
-import Icon from 'react-native-vector-icons/Feather';
 
 export interface IEvent {
   id: string;
@@ -33,7 +33,7 @@ const HomeScreen: React.FC = () => {
       id: '1',
       name: 'Fantasma da opera',
       image:
-        'https://lh3.googleusercontent.com/proxy/gJemlLD8biLWC_837HixATvxQl1RCHJmSMuRhGQjFkiO4uHDvESqOvUz79NTPaKp8b7WmIAe8nqIykuHXBsz219TS9VHjVI6i53ax52AM3bEdSHkxRw3_2FedwmkEP3c',
+        'https://lh3.googleusercontent.com/proxy/O2Axw97z8tZrjTyLn8VtS-AsaUCt7kVzztrj77G-MAMLxwQ_k0MS115n_ef_NsLSEwaleFiEvb_aA7Ec8mu7Z57c7bR9A640S6FY1MFLYKSWZL_GQ1mL1XUZsFoFkrhy',
       date: 'SET 27',
       hour: '19:00',
       description:
@@ -79,14 +79,15 @@ const HomeScreen: React.FC = () => {
         <EventsList
           data={events}
           keyExtractor={event => event.id}
-          contentContainerStyle={{marginBottom: 24, height: '100%'}}
+          contentContainerStyle={{marginBottom: 24}}
+          showsVerticalScrollIndicator={false}
           renderItem={({item: event}) => (
             <Event>
               <EventContainer>
                 <EventImage source={{uri: event.image}} />
 
                 <ButtonView>
-                  <EventContent>{event.name}</EventContent>
+                  <EventTitle>{event.name}</EventTitle>
                   <DataContent>
                     <EventContent>{event.date}</EventContent>
                     <EventContent>{event.hour}</EventContent>

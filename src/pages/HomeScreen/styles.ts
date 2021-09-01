@@ -24,6 +24,11 @@ export const Event = styled.View`
 `;
 
 export const EventContent = styled.Text`
+  padding-right: 10px;
+  font-size: 15px;
+`;
+
+export const EventTitle = styled.Text`
   font-family: 'RobotoSlab-Regular';
   font-size: 20px;
   padding-bottom: 10px;
@@ -33,7 +38,7 @@ export const EventContent = styled.Text`
 
 export const DataContent = styled.View`
   flex-direction: row;
-  padding-right: 20px;
+  margin-bottom: 20px;
 `;
 
 export const EventsList = styled(FlatList as new () => FlatList<IEvent>)`
@@ -67,3 +72,5 @@ export const ButtonText = styled.Text`
 export const ButtonView = styled.View`
   margin-left: 20px;
 `;
+
+export const Scroll = styled.ScrollView``;
