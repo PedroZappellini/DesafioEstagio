@@ -1,5 +1,4 @@
 import styled from 'styled-components/native';
-import {RectButton} from 'react-native-gesture-handler';
 
 export const Container = styled.TouchableOpacity`
   width: 100%;
@@ -12,6 +11,6 @@ export const Container = styled.TouchableOpacity`
 `;
 
 export const ButtonText = styled.Text`
-  font-family: 'RobotoSlab-Medium';
+  font-family: 'Roboto-Medium';
   font-size: 16px;
 `;

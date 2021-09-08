@@ -12,7 +12,7 @@ export const ProfileImage = styled.Image`
 `;
 
 export const Title = styled.Text`
-  font-family: 'RobotoSlab-Medium';
+  font-family: 'Roboto-Medium';
   font-size: 24px;
   text-align: center;
   margin-top: 30px;

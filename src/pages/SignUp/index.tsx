@@ -1,11 +1,4 @@
 import React from 'react';
-import {
-  Image,
-  KeyboardAvoidingView,
-  Platform,
-  ScrollView,
-  Text,
-} from 'react-native';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -57,7 +50,7 @@ const SignUp: React.FC = () => {
       <Button
         containerStyle={{marginTop: 20}}
         onPress={() => {
-          navigation.navigate('HomeScreen');
+          navigation.navigate('Home');
         }}>
         Cadastrar
       </Button>

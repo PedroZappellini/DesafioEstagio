@@ -3,15 +3,18 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   flex: 1;
   background: #fff;
-  align-items: center;
-  padding: 0 20px;
 `;
 
 export const Title = styled.Text`
   font-size: 24px;
-  text-align: center;
-  margin-top: 30px;
   font-family: 'Roboto-Medium';
+  margin-top: 20px;
+`;
+
+export const Description = styled.Text`
+  font-family: 'Roboto-Medium';
+  padding-left: 5px;
+  opacity: 0.6;
 `;
 
 export const EventContainer = styled.View`
@@ -19,6 +22,7 @@ export const EventContainer = styled.View`
   background: #e9ecef;
   border-radius: 8px;
   margin-top: 30px;
+  margin-bottom: 30px;
   flex-direction: row;
 `;
 
@@ -28,18 +32,13 @@ export const EventImage = styled.Image`
   border-radius: 8px;
 `;
 
+export const EventData = styled.View`
+  padding-left: 20px;
+`;
+
 export const EventTitle = styled.Text`
   font-size: 20px;
   font-family: 'Roboto-Medium';
-`;
-
-export const EventText = styled.Text`
-  font-size: 15px;
-  padding-right: 20px;
-`;
-
-export const EventData = styled.View`
-  padding-left: 20px;
 `;
 
 export const DataContent = styled.View`
@@ -47,12 +46,20 @@ export const DataContent = styled.View`
   margin-top: 10px;
 `;
 
-export const InputContainer = styled.View`
-  margin-top: 50px;
+export const EventText = styled.Text`
+  font-size: 15px;
+  padding-right: 20px;
 `;
 
-export const DoubleLineInput = styled.View`
-  width: 40%;
+export const DescriptionContainer = styled.View`
   flex-direction: row;
-  margin-bottom: 20px;
+  align-items: center;
+  margin-top: 10px;
+`;
+
+export const ButtonContainer = styled.View`
+  justify-content: space-between;
+  background: #fff;
+  padding: 0 20px;
+  flex: 1;
 `;

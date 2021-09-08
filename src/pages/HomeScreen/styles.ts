@@ -24,15 +24,14 @@ export const Event = styled.View`
 `;
 
 export const EventContent = styled.Text`
-  padding-right: 10px;
+  padding-right: 20px;
   font-size: 15px;
 `;
 
 export const EventTitle = styled.Text`
-  font-family: 'RobotoSlab-Regular';
+  font-family: 'Roboto-Medium';
   font-size: 20px;
   padding-bottom: 10px;
-  padding-right: 20px;
   color: #1c1c1c;
 `;
 
@@ -66,7 +65,7 @@ export const ButtonContainer = styled.TouchableOpacity`
 
 export const ButtonText = styled.Text`
   font-size: 20px;
-  font-family: 'RobotoSlab-Regular';
+  font-family: 'Roboto-Medium';
 `;
 
 export const ButtonView = styled.View`

@@ -7,12 +7,13 @@ export const Logo = styled.Image`
 
 export const Title = styled.Text`
   font-size: 24px;
-  font-family: 'RobotoSlab-Medium';
+  font-family: 'Roboto-Medium';
   margin: 64px 0 24px;
 `;
 
 export const Container = styled.View`
   flex: 1;
+  background: #fff;
   justify-content: center;
   padding: 0 30px;
   margin-bottom: 40px;

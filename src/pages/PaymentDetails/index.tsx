@@ -39,6 +39,7 @@ const PaymentDetails: React.FC = () => {
             <DataContent>
               <EventText>{event.date}</EventText>
               <EventText>{event.hour}</EventText>
+              <EventText>{event.price}</EventText>
             </DataContent>
           </EventData>
         </EventContainer>
@@ -69,7 +70,7 @@ const PaymentDetails: React.FC = () => {
 
         <Button
           onPress={() => {
-            navigation.navigate('Ticket', {event});
+            navigation.navigate('Tickets');
           }}
           containerStyle={{marginTop: 20}}>
           Finalizar

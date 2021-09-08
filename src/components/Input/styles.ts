@@ -16,12 +16,12 @@ export const TextInput = styled.TextInput`
   width: 100%;
   color: #000;
   font-size: 16px;
-  font-family: 'RobotoSlab-Regular';
+  font-family: 'Roboto-Medium';
 `;
 
 export const Label = styled.Text`
   font-size: 14px;
-  font-family: 'RobotoSlab-Medium';
+  font-family: 'Roboto-Medium';
 `;
 
 export const Container = styled.View`

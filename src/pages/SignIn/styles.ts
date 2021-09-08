@@ -7,7 +7,7 @@ export const Logo = styled.Image`
 
 export const Title = styled.Text`
   font-size: 24px;
-  font-family: 'RobotoSlab-Medium';
+  font-family: 'Roboto-Medium';
   margin: 64px 0 24px;
 `;
 
@@ -18,8 +18,6 @@ export const Container = styled.View`
   padding: 0 30px;
   margin-bottom: 40px;
 `;
-
-export const Label = styled.Text``;
 
 export const LogoContainer = styled.View`
   flex-direction: row;

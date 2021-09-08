@@ -1,7 +1,7 @@
 import {useRoute} from '@react-navigation/native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Feather';
-import {ButtonText} from './styles';
+import {ButtonText, Data, DataContent, TextContainer} from './styles';
 import Header from '../../components/Header';
 import {IEvent} from '../HomeScreen';
 import {Button, Container, Description, EventImage, Title} from './styles';
@@ -26,8 +26,15 @@ const EventDetails: React.FC = () => {
             uri: event.image,
           }}
         />
-        <Title>{event.name}</Title>
-        <Description>{event.description}</Description>
+        <TextContainer>
+          <Title>{event.name}</Title>
+          <DataContent>
+            <Data>{event.date}</Data>
+            <Data>{event.hour}</Data>
+            <Data>{event.price}</Data>
+          </DataContent>
+          <Description>{event.description}</Description>
+        </TextContainer>
 
         <Button
           onPress={() => {

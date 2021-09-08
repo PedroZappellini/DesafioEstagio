@@ -14,17 +14,17 @@ export const EventImage = styled.Image`
 
 export const Title = styled.Text`
   font-size: 24px;
-  font-family: 'RobotoSlab-Medium';
-  text-align: center;
+  font-family: 'Roboto-Medium';
+  text-align: left;
 
   margin-top: 20px;
 `;
 
 export const Description = styled.Text`
   font-size: 20px;
-  font-family: 'RobotoSlab-Regular';
-  text-align: center;
-  margin-top: 30px;
+  font-family: 'Roboto-Medium';
+  margin-top: 10px;
+  opacity: 0.6;
 `;
 
 export const Button = styled.TouchableOpacity`
@@ -39,7 +39,23 @@ export const Button = styled.TouchableOpacity`
 `;
 
 export const ButtonText = styled.Text`
-  font-family: 'RobotoSlab-Medium';
-  font-size: 24px;
+  font-family: 'Roboto-Medium';
+  font-size: 20px;
   padding-left: 20px;
+`;
+
+export const TextContainer = styled.View`
+  padding: 0 20px;
+`;
+
+export const DataContent = styled.View`
+  flex-direction: row;
+  margin-top: 10px;
+  opacity: 0.8;
+`;
+
+export const Data = styled.Text`
+  font-size: 20px;
+  padding-right: 20px;
+  font-family: 'Roboto-Medium';
 `;
